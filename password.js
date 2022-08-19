@@ -4,18 +4,23 @@
 //If passing, logs success, if failing, logs error.
 //Test conditionals with changes made to the password.
 
-let password = 'finalfanTasy7'
+let password = 'finalFantasy7'
 let passwordlength = false
 let upperCase = false
 let hasNum = false
+let hasLet = false
 let passwordcap = false
 
 
-for (let i=0; i<password.length; i++){
-if(password[i] === password[i].toUpperCase()){
-upperCase = true}
-if(typeof +password[i] === 'number'){
+for (let i = 0; i < password.length; i++){
+if(password[i] === password[i].toUpperCase() && isNaN(+password[i])
+){
+ upperCase = true}
+if(!isNaN(+password[i])){
     hasNum = true
+}
+if(isNaN(+password[i])){
+    hasLet = true
 }
 }
 if(password.length > 9){
@@ -24,7 +29,7 @@ passwordlength = true
 if(password.length < 21){
 passwordmax = true
 }
-if(passwordmax === true && hasNum === true && passwordlength === true && upperCase === true) {
+if(passwordmax === true && hasNum === true && passwordlength === true && upperCase === true && hasLet === true) {
     console.log('You did it!')
 } else {
     console.log('Not quite.')
