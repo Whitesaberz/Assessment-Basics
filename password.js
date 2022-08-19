@@ -22,9 +22,9 @@ if(password.length > 9){
 passwordlength = true
 }
 if(password.length < 21){
-passwordcap = true
+passwordmax = true
 }
-if(passwordcap === true && hasNum === true && passwordlength === true && upperCase === true) {
+if(passwordmax === true && hasNum === true && passwordlength === true && upperCase === true) {
     console.log('You did it!')
 } else {
     console.log('Not quite.')
