@@ -9,7 +9,7 @@
     It should be a string containing your best definition of what Git is.
 */
 
-//CODE HERE
+let gitDefinition = 'Git is a program designed as a version control system, allowing teams to track changes to coding projects by creating snapshots of "checkpoints" in the work flow, preventing loss of progress and errors.'
 
 //////////////////PROBLEM 2////////////////////
 /*
@@ -17,7 +17,7 @@
     It should be a string containing your best definition of what GitHub is.
 */
 
-//CODE HERE
+let gitHubDefinition = 'GitHub is a website that can be viewed as a warehouse of Git repositories, to be shared to and worked on by others, allowing for collaboration.'
 
 //////////////////PROBLEM 3////////////////////
 /*
@@ -25,7 +25,7 @@
     It should be a string containing your best definition of what 'git init' does.
 */
 
-//CODE HERE
+let gitInitDefinition = 'Command to initialize a local repository (checkpoint system) in the current folder you are accessing.'
 
 //////////////////PROBLEM 4////////////////////
 /*
@@ -33,7 +33,7 @@
     It should be a string containing your best definition of what 'git clone' does.
 */
 
-//CODE HERE
+let gitCloneDefinition = 'Using a REPO_URL from GitHub, copy the repository and put it on my machine.'
 
 //////////////////PROBLEM 5////////////////////
 /*
@@ -41,7 +41,7 @@
     It should be a string containing your best definition of what 'git status' does.
 */
 
-//CODE HERE
+let gitStatusDefinition = 'This command gives you updated information about your current repository.'
 
 //////////////////PROBLEM 6////////////////////
 /*
@@ -52,7 +52,9 @@
     It should be a string containing the code to add all files.
 */
 
-//CODE HERE
+let gitAddDefinition = 'After initializing the git repo, this command adds whatever changes have been made after the first checkpoint to be tracked.'
+let gitAddCode = 'git add . -A'
+
 
 //////////////////PROBLEM 7////////////////////
 /*
@@ -63,7 +65,8 @@
     It should be a string containing the code to commit using the message "initial commit".
 */
 
-//CODE HERE
+let gitCommitDefinition = 'This command creates a snapshot of the files being tracked.'
+let gitCommitCode = 'git commit -m "inital commit"'
 
 
 //////////////////PROBLEM 8////////////////////
@@ -72,4 +75,4 @@
     It should be a string containing your best definition of what 'git push' does.
 */
 
-//CODE HERE
+let gitPushDefinition = 'Using the REPO_NAME, this command pushes the local commits on GitHub.'
